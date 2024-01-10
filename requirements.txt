@@ -3,3 +3,4 @@ celery
 pika
 selenium
 psycopg2-binary
+importlib-metadata==4.13.0

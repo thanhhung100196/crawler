@@ -2,7 +2,13 @@
 version: '3'
 services:
   rabbit:
-    image: rabbitmq:3
+    image: rabbitmq:3-management
+    environment:
+      - RABBITMQ_DEFAULT_USER=crowd
+      - RABBITMQ_DEFAULT_PASS=crowd123
+    ports:
+      - 5672:5672
+      - 15672:15672
   web:
     build: .
     volumes:
