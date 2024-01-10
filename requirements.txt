@@ -1,0 +1,5 @@
+# requirements.txt
+celery
+pika
+selenium
+psycopg2-binary
